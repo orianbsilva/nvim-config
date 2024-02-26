@@ -23,9 +23,6 @@ nvim_tree.setup {
   hijack_cursor = false,
   hijack_netrw = true,
   hijack_unnamed_buffer_when_opening = false,
-  ignore_buffer_on_setup = false,
-  open_on_setup = true,
-  open_on_setup_file = false,
   open_on_tab = true,
   ignore_buf_on_tab_change = {},
   sort_by = "name",
@@ -35,12 +32,10 @@ nvim_tree.setup {
   reload_on_bufenter = false,
   respect_buf_cwd = false,
   on_attach = "disable", -- function(bufnr). If nil, will use the deprecated mapping strategy
-  remove_keymaps = false, -- boolean (disable totally or not) or list of key (lhs)
   view = {
     adaptive_size = false,
     centralize_selection = false,
-    width = 32,    
-    hide_root_folder = false,
+    width = 32,
     side = "left",
     preserve_window_proportions = false,
     number = false,
@@ -123,7 +118,6 @@ nvim_tree.setup {
     update_root = true,
     ignore_list = {},
   },
-  ignore_ft_on_setup = {},
   system_open = {
     cmd = "",
     args = {},
