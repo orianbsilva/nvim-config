@@ -114,6 +114,13 @@ return packer.startup(function(use)
 
   use { "akinsho/toggleterm.nvim" }
 
+  use { 'github/copilot.vim' }
+
+  use { 'zbirenbaum/copilot-cmp' }
+
+  use { 'onsails/lspkind-nvim' }
+
+  use { 'ThePrimeagen/vim-be-good' }
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if packer_bootstrap then

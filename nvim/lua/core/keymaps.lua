@@ -68,3 +68,8 @@ map('n', '<leader>n', ':NvimTreeFindFile<CR>')      -- search file
 
 -- Tagbar
 map('n', '<leader>z', ':TagbarToggle<CR>')          -- open/close
+
+
+
+--map('i', '<C-a>', ':copilot#Accept()<CR>')
+

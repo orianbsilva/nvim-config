@@ -87,3 +87,8 @@ local disabled_built_ins = {
 for _, plugin in pairs(disabled_built_ins) do
    g["loaded_" .. plugin] = 1
 end
+
+--g.copilot_no_tab_map = true
+--g.copilot_assume_mapped = true
+--g.copilot_tab_fallback  = ""
+

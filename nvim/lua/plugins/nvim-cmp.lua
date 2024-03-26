@@ -16,12 +16,25 @@ if not luasnip_status_ok then
   return
 end
 
+local lspkind_status_ok, lspkind = pcall(require, 'lspkind')
+if not lspkind_status_ok then
+  return
+end
+
 cmp.setup {
   -- Load snippet support
   snippet = {
     expand = function(args)
       luasnip.lsp_expand(args.body)
     end,
+  },
+
+  formatting = {
+    format = lspkind.cmp_format({
+      mode = "symbol",
+      max_width = 50,
+      symbol_map = { Copilot = "" }
+    })
   },
 
 -- Completion settings
@@ -43,7 +56,7 @@ cmp.setup {
       select = true,
     },
 
-    -- Tab mapping
+    --Tab mapping
     ['<Tab>'] = function(fallback)
       if cmp.visible() then
         cmp.select_next_item()
@@ -66,10 +79,11 @@ cmp.setup {
 
   -- Load sources, see: https://github.com/topics/nvim-cmp
   sources = {
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' },
-    { name = 'path' },
-    { name = 'buffer' },
+    { name = 'copilot', group_index = 2},
+    { name = 'nvim_lsp', group_index = 2},
+    { name = 'luasnip', group_index = 2},
+    { name = 'path' , group_index = 2},
+    { name = 'buffer', group_index = 2},
   },
 }
 

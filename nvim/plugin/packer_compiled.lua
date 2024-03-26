@@ -104,6 +104,16 @@ _G.packer_plugins = {
     path = "/home/orian/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["copilot-cmp"] = {
+    loaded = true,
+    path = "/home/orian/.local/share/nvim/site/pack/packer/start/copilot-cmp",
+    url = "https://github.com/zbirenbaum/copilot-cmp"
+  },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/home/orian/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["feline.nvim"] = {
     loaded = true,
     path = "/home/orian/.local/share/nvim/site/pack/packer/start/feline.nvim",
@@ -119,6 +129,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/orian/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
+  },
+  ["lspkind-nvim"] = {
+    loaded = true,
+    path = "/home/orian/.local/share/nvim/site/pack/packer/start/lspkind-nvim",
+    url = "https://github.com/onsails/lspkind-nvim"
   },
   ["monokai.nvim"] = {
     loaded = true,
@@ -185,6 +200,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/orian/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
     url = "https://github.com/akinsho/toggleterm.nvim"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/home/orian/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
   }
 }
 
